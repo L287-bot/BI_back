@@ -11,6 +11,8 @@
             <result property="chartType" column="chartType" jdbcType="VARCHAR"/>
             <result property="genChart" column="genChart" jdbcType="VARCHAR"/>
             <result property="getResult" column="getResult" jdbcType="VARCHAR"/>
+        <result property="chartStatus" column="chartStatus" jdbcType="VARCHAR"/>
+        <result property="execMessage" column="execMessage" jdbcType="VARCHAR"/>
             <result property="userId" column="userId" jdbcType="BIGINT"/>
             <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
@@ -22,6 +24,6 @@
         id,goal,chartData,
         chartType,genChart,getResult,
         userId,createTime,updateTime,
-        isDelete,name
+        isDelete,name,chartStatus,execMessage
     </sql>
 </mapper>
